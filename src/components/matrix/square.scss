@@ -1,0 +1,35 @@
+:root {
+  --square_size: 25px;
+}
+
+li {
+  display: inline-block;
+}
+.square {
+  display: flex;
+  width: var(--square_size);
+  height: var(--square_size);
+  border-width: 1.4px;
+  background-color: white;
+  border-color: black;
+  color: black;
+  margin-bottom: var(--margin);
+  text-align: center;
+  justify-content: center;
+  font-size: calc(var(--square_size) * 3 / 4);
+}
+
+.bool-square {
+  display: flex;
+  width: var(--square_size);
+  height: var(--square_size);
+  border-width: 1.4px;
+  border-color: black;
+  background-color: white;
+  color: black;
+  font-size: 25px;
+  border-style: solid;
+  text-align: center;
+  justify-content: center;
+  margin-bottom: var(--margin);
+}

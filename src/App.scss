@@ -1,0 +1,33 @@
+:root {
+  --background-color: white;
+  --color: black;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  background-color: var(--background-color);
+  color: var(--color);
+  transition: background-color 500ms linear;
+  transition: color 500ms linear;
+  padding-top: 100px;
+  padding: 50px;
+}
+.page {
+  position: relative;
+}
+.inputBox {
+  position: absolute;
+  display: inline-flex;
+  flex-direction: column;
+  right: 0;
+  text-align: center;
+  justify-content: center;
+}
+input {
+  font-size: 150%;
+}
+
+label {
+  font-size: 150%;
+  text-align: left;
+}

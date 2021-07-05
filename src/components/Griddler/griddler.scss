@@ -1,0 +1,62 @@
+.grid-container {
+  position: absolute;
+  display: grid;
+
+  left: 0;
+  gap: 10px;
+  left: 0;
+}
+.buttons {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+.submit_button {
+  width: 100px;
+  height: 50px;
+  grid-row-start: 1;
+  font-size: 30px;
+  text-align: center;
+
+  font-family: bold;
+}
+
+.save_button {
+  position: absolute;
+  width: 100px;
+  height: 50px;
+  grid-row-start: 1;
+  font-size: 30px;
+  text-align: center;
+  font-family: bold;
+  bottom: 0;
+}
+.name_input {
+  grid-row-start: 1;
+  width: 100px;
+  position: absolute;
+  color: #20455e;
+  bottom: 50px;
+  transition: border 0.1s ease;
+  resize: none;
+  border: 1px solid black;
+  &::placeholder {
+    color: #b6c1cd;
+  }
+}
+.left {
+  grid-row-start: 2;
+  grid-row-end: 3;
+
+  text-align: right;
+}
+.up {
+  grid-column-start: 2;
+  grid-column-end: 3;
+}
+.main {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}

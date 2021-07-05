@@ -1,0 +1,21 @@
+:root {
+  --background: #404a00;
+}
+
+.page-list {
+  display: flex;
+  justify-content: center;
+}
+.page-button {
+  width: 20px;
+  height: 30px;
+  color: white;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.page-button:hover {
+  background-color: #525357;
+}

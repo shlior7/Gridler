@@ -1,0 +1,56 @@
+.toggle-switch {
+  position: relative;
+  width: 140px;
+  display: inline-block;
+  text-align: right;
+  &-checkbox {
+    display: none;
+  }
+  &-label {
+    display: block;
+    overflow: hidden;
+    cursor: pointer;
+    border: 0 solid #bbb;
+    border-radius: 20px;
+    margin: 0;
+  }
+  &-inner {
+    display: block;
+    width: 200%;
+    margin-left: -100%;
+    transition: margin 0.3s ease-in 0s;
+    &:before,
+    &:after {
+      display: block;
+      float: left;
+      width: 50%;
+      height: 34px;
+      padding: 0;
+      line-height: 34px;
+      font-size: 18px;
+      color: white;
+      font-weight: bold;
+      box-sizing: border-box;
+    }
+    &:before {
+      content: "Dark Theme";
+      text-transform: uppercase;
+      padding-right: 0px;
+      background-color: rgb(35, 35, 35);
+      color: #fff;
+      text-align: center;
+    }
+  }
+  &-inner:after {
+    content: "Light Theme";
+    text-transform: uppercase;
+    padding-left: 0px;
+    background-color: #bbb;
+    color: #fff;
+    text-align: center;
+  }
+
+  &-checkbox:checked + .toggle-switch-inner {
+    margin-left: 0;
+  }
+}
