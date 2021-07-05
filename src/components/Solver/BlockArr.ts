@@ -79,6 +79,7 @@ class block_arr {
       );
     }
     blRight.deleteBlock(newRight + 1, blRight.right_border);
+    console.log(" ");
     return newRight;
   }
   DeleteBlocks(block: Block, index: number) {
